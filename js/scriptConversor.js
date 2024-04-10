@@ -25,13 +25,14 @@ botaoConverter.addEventListener("click", converter);
 const botaoLimpar = document.getElementById("botao-limpar");
 botaoLimpar.addEventListener("click", limpar);
 
-const botaoAceita = document.getElementById("botao-aceita");
-botaoAceita.addEventListener("click", aceitarMensagem);
+const botaoAceitaMensagem = document.getElementById("botao-aceita-mensagem");
+botaoAceitaMensagem.addEventListener("click", aceitarMensagem);
 
 function aceitarMensagem() {
-    alert("Usuario aceitou os termos");
-    const divMensagemUsuario = document.getElementById("mensagem-usuario")
+    const divMensagemUsuario = document.getElementById("mensagem-usuario");
+    divMensagemUsuario.classList.add("oculto")
 }
+
 
 let valorUsuario = document.getElementById("valorEntrada");
 valorUsuario.addEventListener("keypress", function (event) {
