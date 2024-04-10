@@ -25,6 +25,14 @@ botaoConverter.addEventListener("click", converter);
 const botaoLimpar = document.getElementById("botao-limpar");
 botaoLimpar.addEventListener("click", limpar);
 
+const botaoAceita = document.getElementById("botao-aceita");
+botaoAceita.addEventListener("click", aceitarMensagem);
+
+function aceitarMensagem() {
+    alert("Usuario aceitou os termos");
+    const divMensagemUsuario = document.getElementById("mensagem-usuario")
+}
+
 let valorUsuario = document.getElementById("valorEntrada");
 valorUsuario.addEventListener("keypress", function (event) {
 
@@ -96,5 +104,3 @@ function inverter() {
     document.getElementById("moeda1").value = valorMoeda2;
     document.getElementById("moeda2").value = valorMoeda1;
 }
-
-// 0wpjd~pswajdg~fpjmãgbfsd
