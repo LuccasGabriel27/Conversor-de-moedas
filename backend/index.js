@@ -29,8 +29,6 @@ aplicacao.get('/info', (req,res) => {
 
 
 
-
-
 // Aplicação ouvindo a porta 4000
 aplicacao.listen(port, () => {
     console.log("Escutando na porta 4000")
